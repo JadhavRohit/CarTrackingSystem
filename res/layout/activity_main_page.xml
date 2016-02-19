@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+<Button
+          	android:text="Proceed"
+          	android:onClick="proceed"
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          />
+     <com.google.android.maps.MapView
+          android:id="@+id/myMapView"
+          android:clickable="true"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:state_enabled="true"
+          android:apiKey="0V4kTPAMNg3lBJylFu0eJB4lC8zCH_GOPp3JK5w"
+          />
+          
+     
+</LinearLayout>

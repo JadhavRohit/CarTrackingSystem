@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<!-- <CheckBox android:layout_width="wrap_content" android:id="@+id/cboxEnable" android:text="Enable Bluetooth" android:layout_height="wrap_content"></CheckBox>
+   -->
+    <ToggleButton android:text="ToggleButton" android:layout_width="wrap_content" android:id="@+id/toggle" android:gravity="center_horizontal" android:background="@drawable/btoff" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:textOn="" android:textOff=""></ToggleButton>  
+<TextView 
+    android:id="@+id/bluetoothstate" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+
+<CheckBox android:layout_width="wrap_content" android:id="@+id/cBoxDisoverable" android:text="Discoverable" android:layout_height="wrap_content"></CheckBox>
+<Button android:layout_width="fill_parent" android:text="Scan Bluetooth Devices" android:layout_height="wrap_content" android:id="@+id/scandevice"></Button>
+
+
+<TextView
+    android:id="@+id/bluetoothstate" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    /> 
+<ListView
+    android:id="@+id/devicesfound" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    /> 
+   
+</LinearLayout>

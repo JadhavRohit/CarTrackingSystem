@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bluetooth"
+      android:versionCode="1"
+      android:versionName="1.0">
+<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+    <application android:label="@string/Blueapp" android:icon="@drawable/blue">
+    <uses-library android:name="com.google.android.maps" />
+	<activity android:name=".AndroidBluetooth"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		 
+        <receiver
+        android:name=".BTDissconnectBCast">
+        	<intent-filter>
+        		<action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+        		 <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED" />
+        	</intent-filter>
+        </receiver>
+        
+        <activity
+        android:name=".MapActivityCls"
+        ></activity>
+        <activity
+        android:name=".Sample"></activity>
+        <activity
+        android:name=".Locatepath"></activity>
+    </application>
+</manifest>
